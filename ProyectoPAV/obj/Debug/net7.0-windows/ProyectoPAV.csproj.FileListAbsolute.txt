@@ -16,3 +16,4 @@ C:\Users\Alejo\source\repos\ProyectoPAV\ProyectoPAV\obj\Debug\net7.0-windows\Pro
 C:\Users\Alejo\source\repos\ProyectoPAV\ProyectoPAV\obj\Debug\net7.0-windows\ProyectoPAV.genruntimeconfig.cache
 C:\Users\Alejo\source\repos\ProyectoPAV\ProyectoPAV\obj\Debug\net7.0-windows\ref\ProyectoPAV.dll
 C:\Users\Alejo\source\repos\ProyectoPAV\ProyectoPAV\obj\Debug\net7.0-windows\ProyectoPAV.PrinicipalForm.resources
+C:\Users\Alejo\source\repos\ProyectoPAV\ProyectoPAV\obj\Debug\net7.0-windows\ProyectoPAV.AltaPersona.resources

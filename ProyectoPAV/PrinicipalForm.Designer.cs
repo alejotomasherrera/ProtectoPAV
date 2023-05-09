@@ -31,11 +31,15 @@
             lblBienvenida = new Label();
             menuStrip1 = new MenuStrip();
             usuarioToolStripMenuItem = new ToolStripMenuItem();
-            alumnoToolStripMenuItem = new ToolStripMenuItem();
             consultaToolStripMenuItem = new ToolStripMenuItem();
             datosToolStripMenuItem = new ToolStripMenuItem();
             cerrarSesionToolStripMenuItem = new ToolStripMenuItem();
+            alumnoToolStripMenuItem = new ToolStripMenuItem();
             personalToolStripMenuItem = new ToolStripMenuItem();
+            personasToolStripMenuItem = new ToolStripMenuItem();
+            altaPersonaToolStripMenuItem = new ToolStripMenuItem();
+            bajaPersonaToolStripMenuItem = new ToolStripMenuItem();
+            modificacionPersonaToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -43,7 +47,7 @@
             // 
             lblBienvenida.AutoSize = true;
             lblBienvenida.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
-            lblBienvenida.Location = new Point(196, 142);
+            lblBienvenida.Location = new Point(114, 150);
             lblBienvenida.Name = "lblBienvenida";
             lblBienvenida.Size = new Size(109, 28);
             lblBienvenida.TabIndex = 0;
@@ -52,7 +56,7 @@
             // 
             // menuStrip1
             // 
-            menuStrip1.Items.AddRange(new ToolStripItem[] { usuarioToolStripMenuItem, alumnoToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { usuarioToolStripMenuItem, alumnoToolStripMenuItem, personasToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(800, 24);
@@ -66,6 +70,24 @@
             usuarioToolStripMenuItem.Size = new Size(59, 20);
             usuarioToolStripMenuItem.Text = "Usuario";
             // 
+            // consultaToolStripMenuItem
+            // 
+            consultaToolStripMenuItem.Name = "consultaToolStripMenuItem";
+            consultaToolStripMenuItem.Size = new Size(143, 22);
+            consultaToolStripMenuItem.Text = "Consulta";
+            // 
+            // datosToolStripMenuItem
+            // 
+            datosToolStripMenuItem.Name = "datosToolStripMenuItem";
+            datosToolStripMenuItem.Size = new Size(143, 22);
+            datosToolStripMenuItem.Text = "Datos";
+            // 
+            // cerrarSesionToolStripMenuItem
+            // 
+            cerrarSesionToolStripMenuItem.Name = "cerrarSesionToolStripMenuItem";
+            cerrarSesionToolStripMenuItem.Size = new Size(143, 22);
+            cerrarSesionToolStripMenuItem.Text = "Cerrar Sesion";
+            // 
             // alumnoToolStripMenuItem
             // 
             alumnoToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { personalToolStripMenuItem });
@@ -74,29 +96,38 @@
             alumnoToolStripMenuItem.Text = "Alumno";
             alumnoToolStripMenuItem.Click += alumnoToolStripMenuItem_Click;
             // 
-            // consultaToolStripMenuItem
-            // 
-            consultaToolStripMenuItem.Name = "consultaToolStripMenuItem";
-            consultaToolStripMenuItem.Size = new Size(180, 22);
-            consultaToolStripMenuItem.Text = "Consulta";
-            // 
-            // datosToolStripMenuItem
-            // 
-            datosToolStripMenuItem.Name = "datosToolStripMenuItem";
-            datosToolStripMenuItem.Size = new Size(180, 22);
-            datosToolStripMenuItem.Text = "Datos";
-            // 
-            // cerrarSesionToolStripMenuItem
-            // 
-            cerrarSesionToolStripMenuItem.Name = "cerrarSesionToolStripMenuItem";
-            cerrarSesionToolStripMenuItem.Size = new Size(180, 22);
-            cerrarSesionToolStripMenuItem.Text = "Cerrar Sesion";
-            // 
             // personalToolStripMenuItem
             // 
             personalToolStripMenuItem.Name = "personalToolStripMenuItem";
-            personalToolStripMenuItem.Size = new Size(180, 22);
+            personalToolStripMenuItem.Size = new Size(119, 22);
             personalToolStripMenuItem.Text = "Personal";
+            // 
+            // personasToolStripMenuItem
+            // 
+            personasToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { altaPersonaToolStripMenuItem, bajaPersonaToolStripMenuItem, modificacionPersonaToolStripMenuItem });
+            personasToolStripMenuItem.Name = "personasToolStripMenuItem";
+            personasToolStripMenuItem.Size = new Size(66, 20);
+            personasToolStripMenuItem.Text = "Personas";
+            personasToolStripMenuItem.Click += personasToolStripMenuItem_Click;
+            // 
+            // altaPersonaToolStripMenuItem
+            // 
+            altaPersonaToolStripMenuItem.Name = "altaPersonaToolStripMenuItem";
+            altaPersonaToolStripMenuItem.Size = new Size(189, 22);
+            altaPersonaToolStripMenuItem.Text = "Alta Persona";
+            altaPersonaToolStripMenuItem.Click += altaPersonaToolStripMenuItem_Click;
+            // 
+            // bajaPersonaToolStripMenuItem
+            // 
+            bajaPersonaToolStripMenuItem.Name = "bajaPersonaToolStripMenuItem";
+            bajaPersonaToolStripMenuItem.Size = new Size(189, 22);
+            bajaPersonaToolStripMenuItem.Text = "Baja Persona";
+            // 
+            // modificacionPersonaToolStripMenuItem
+            // 
+            modificacionPersonaToolStripMenuItem.Name = "modificacionPersonaToolStripMenuItem";
+            modificacionPersonaToolStripMenuItem.Size = new Size(189, 22);
+            modificacionPersonaToolStripMenuItem.Text = "Modificacion Persona";
             // 
             // PrinicipalForm
             // 
@@ -125,5 +156,9 @@
         private ToolStripMenuItem cerrarSesionToolStripMenuItem;
         private ToolStripMenuItem alumnoToolStripMenuItem;
         private ToolStripMenuItem personalToolStripMenuItem;
+        private ToolStripMenuItem personasToolStripMenuItem;
+        private ToolStripMenuItem altaPersonaToolStripMenuItem;
+        private ToolStripMenuItem bajaPersonaToolStripMenuItem;
+        private ToolStripMenuItem modificacionPersonaToolStripMenuItem;
     }
 }

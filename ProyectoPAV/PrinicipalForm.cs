@@ -29,5 +29,17 @@ namespace ProyectoPAV
         {
 
         }
+
+        private void personasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void altaPersonaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AltaPersona ventana = new AltaPersona();
+            ventana.Show();
+            
+        }
     }
 }
